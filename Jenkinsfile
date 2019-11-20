@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                docker ps -a
+                powershell 'docker ps -a'
             }
         }
     }
